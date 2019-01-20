@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\phil\\Documents\\Logiciels\\Python\\IA\\log\\model.ckpt"
+all_model_checkpoint_paths: "C:\\Users\\phil\\Documents\\Logiciels\\Python\\IA\\log\\model.ckpt"

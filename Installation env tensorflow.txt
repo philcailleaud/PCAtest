@@ -1,0 +1,34 @@
+﻿*** Installation de Python/TensorFlow/Cuda/CuNN ***
+---------------------------------------------------
+
+DATE : 8/Déc/2018. TensorFlow v.1.10.0
+
+A partir de ce document :
+https://medium.com/@lmoroney_40129/installing-tensorflow-with-gpu-on-windows-10-3309fec55a00
+
+Installer Python 3.6.2
+
+mettre à jour la version de pip (indiqué au premier lancement da pip)
+
+pip install tensorflow-gpu==1.10.0
+
+installer le driver CUDA v9.0 pour Windows10 :
+( https://developer.nvidia.com/cuda-90-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal )
+
+choisir installation personnalisée, et , garder les versions les plus hautes des différents drivers
+et ne pas installer GEForceExpérience.
+
+Tester dans Python (en réouvrant la fenetre pour mettre à jour le path)  : 
+>> import tensorflow as tf
+
+Installer CuDNN version 7.4.1.5 (for CUDA 9.0)
+( https://developer.nvidia.com/rdp/cudnn-download )
+
+
+TESTS :
+
+voir : https://www.tensorflow.org/tutorials/representation/word2vec  
+
+suivi de : https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/word2vec/word2vec_basic.py
+
+https://www.tensorflow.org/guide/using_gpu		--> comment coder l'utilisation de(s) GPU(s)
