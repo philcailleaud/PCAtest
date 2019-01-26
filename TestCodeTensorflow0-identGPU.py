@@ -15,9 +15,9 @@ print("\n" * 2)
 
 ## Affiche le calcul des shapes ##
 with tf.Session() as sess:
-    print ("Calcul : ",sess.run(c))
+    print ('Calcul : \n ', sess.run(c))
 
 print("\n" * 2)
-print("CUDA installé ?  : ",tf.test.is_built_with_cuda())
+print('CUDA installé ?  : ', tf.test.is_built_with_cuda())
 
 sess.close()
