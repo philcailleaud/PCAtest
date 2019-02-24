@@ -1,6 +1,9 @@
 1) WINDOWS : Upgrade de la version de PIP
    --------------------------------------
+
+###  !!!  ###
 Powershell en mode admin :
+###  !!!  ###
 
 PS C:\WINDOWS\system32> python -m pip install --upgrade pip
 Requirement already up-to-date: pip in c:\program files\python36\lib\site-packages (18.1)
