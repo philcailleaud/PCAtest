@@ -16,7 +16,7 @@
 # Voir LIGNE 194, remplacer CPU par GPU dans le cas d'une carte graphique NVidia (0)
 # voir explications : https://www.tensorflow.org/guide/using_gpu
 
-# ATTENTION, le lancement est long et sans affichage dans un premier temps.
+# ATTENTION, le lancement est long et sans affichage dans un premier temps, car il y a chargement de fichier sur le Web.
 # Par défaut, le résultat est dans : C:\Users\phil\AppData\Local\Temp\tsne.png
 
 from __future__ import absolute_import
@@ -191,7 +191,7 @@ with graph.as_default():
         valid_dataset = tf.constant(valid_examples, dtype=tf.int32)
 
     # Ops and variables pinned to the CPU because of missing GPU implementation
-    with tf.device('/gpu:0'):
+    with tf.device('/device:GPU:0'):
         # Look up embeddings for inputs.
         with tf.name_scope('embeddings'):
             embeddings = tf.Variable(
